@@ -1,0 +1,7 @@
+<%- include('partials/header') %>
+    <form action="/delete" method="post" style="margin-top: 5%;">
+        <button type="submit" class="btn btn-danger" name="button" value="<%=redirectPost.id%>">Delete This Entry</button>
+    </form>
+    <h1><%=redirectPost.name%></h1>
+    <p><%=redirectPost.content%></p>
+<%- include('partials/footer') %>
